@@ -7,7 +7,7 @@ type ResponsePayload = {
 
 const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<ResponsePayload> {
     return {
-        "target": "newMessage",
+        "target": "groupMessage",
         "arguments": [ req.body ]
     };
 };
